@@ -12,15 +12,15 @@ Add this to your `pubspec.yaml` (or create it):
 dependencies:
   md4: any
 ```
-Then run the [Pub Package Manager][pub] (comes with the Dart SDK):
+Then run the Pub Package Manager (comes with the Dart SDK):
 
     pub install
-    
- Usage
- -----
+
+Usage
+-----
  
- The MD4 class should behave just like the existing hash functions in
- `dart:crypto`.
+The MD4 class should behave just like the existing hash functions in
+`dart:crypto`.
  
  ```dart
 import 'package:md4/md4.dart';
