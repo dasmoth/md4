@@ -1,8 +1,10 @@
 name: md4
-version: 0.1.0
+version: 0.2.0
 author: Thomas Down <thomas@biodalliance.org>
 description: Pure-Dart implementation of the MD4 hash function
 homepage: https://github.com/dasmoth/md4
+dependencies:
+  crypto: any
 dev_dependencies:
   unittest: any
 

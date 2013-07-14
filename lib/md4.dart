@@ -1,7 +1,8 @@
 library md4;
 
-import 'dart:crypto';
 import 'dart:math';
+import 'package:crypto/crypto.dart';
+
 
 part 'src/hash-base.dart';
 

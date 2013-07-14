@@ -24,7 +24,7 @@ abstract class _HashBase implements Hash {
   // Update the hasher with more data.
   add(List<int> data) {
     if (_digestCalled) {
-      throw new HashException(
+      throw new Exception(
           'Hash update method called after digest was retrieved');
     }
     _lengthInBytes += data.length;
@@ -144,10 +144,10 @@ abstract class _HashBase implements Hash {
   bool _digestCalled = false;
   
   // Constants.
-  const _MASK_8 = 0xff;
-  const _MASK_32 = 0xffffffff;
-  const _BITS_PER_BYTE = 8;
-  const _BYTES_PER_WORD = 4;
+  static const _MASK_8 = 0xff;
+  static const _MASK_32 = 0xffffffff;
+  static const _BITS_PER_BYTE = 8;
+  static const _BYTES_PER_WORD = 4;
   
   // Helper functions used by more than one hasher.
   
